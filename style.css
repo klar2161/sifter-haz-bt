@@ -1,0 +1,824 @@
+/*  Theme Name: CMS exam project
+Author: Klara, Daniel, Istvan
+Version: 1.0
+*/
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    margin:0;
+    padding: 0;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+
+
+p {
+    line-height: 1.65em;
+}
+
+/* general layout */
+div.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left:20px ;
+    padding-right: 20px;
+    
+}
+
+article.post{
+    border-bottom: 2px dotted #bbbbbb;
+}
+article.post:last-of-type{
+    border-bottom: none;
+}
+p.post-info {
+    color: #999;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.white–space-container {
+    height: 5rem;
+}
+
+.post-container{
+    margin: 5rem;
+    width: 80%;
+}
+
+.post .page {
+    width:30%;
+}
+
+/* header */
+.site-header-about{
+    height: 600px;
+}
+
+/* footer */
+.site-footer {
+    margin-top: 30px;
+    border-top: 2px solid #999;
+}
+
+/* navigation Menus */
+.site-nav ul {
+    margin: 0;
+    
+}
+
+
+.site-nav ul:before, .site-nav ul:after { content :"";   display:  table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+    list-style: none;
+    float: left;
+}
+/* site header menu */
+.site-header nav ul li a:link{
+    margin: 10px;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+    display: block;
+    padding: 10px 18px;
+   text-decoration: none;
+}
+.site-header nav ul li a:hover{
+    color: #520707;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+    color: #520707;
+}
+
+ul {
+    list-style:none;
+}
+
+ul.menu > li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 15px;
+}
+
+ul.menu > li > a {
+    display: block;
+    line-height: 40px;
+}
+ul.sub-menu a{
+    color: #999;
+}
+ul.sub-menu {
+    
+    font-size: 14px;
+    background-color: white;
+    display:none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    min-width: 200px;
+
+}
+
+ul.menu > li:hover ul.sub-menu {
+    display: block;
+    z-index: 999;
+}
+
+
+/* footer menu */
+.site-footer nav ul li {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #999;
+}
+
+ .widget-title{
+    margin :0;
+    padding: 0;
+    margin-left: 2.2rem;
+    color: #999;
+}
+
+.widget-services{
+    background-color: #520707;
+    width: 90%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 35px;
+}
+
+.widget-services a{
+    text-decoration: none;
+    color: white;
+}
+.widget-services a:hover{
+    
+    color: #999;
+}
+
+
+#menu-custom-menu, #menu-pages-menu {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#menu-custom-menu  a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/* page layout */
+article.page h2 {
+    font-size: 300%;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: flex; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+/* Two Column Title Layout */
+
+div.title-column {
+	width: 30%;
+	float: left;
+}
+
+div.text-column {
+	width: 70%;
+    float: right;
+    background-color:whitesmoke;
+    opacity: 80%;
+}
+
+div.text-column  p{
+    margin:2vh;
+}
+div.text-column  h3{
+    margin:2vh;
+}
+
+/* about us page */
+
+.about-info {
+    padding-left: 340px;
+    padding-top: 200px;
+    color: white;
+    text-align: left;
+}
+
+.cscolumn_aboutus
+{
+    background-color: black;
+    opacity: 60%;
+    padding:20px ;
+}
+
+.title-about {
+    font-size: 350%;
+    border: solid;
+    color: white;
+    margin: 0px 700px 60px 0px;
+    text-align: center;
+} 
+.responsive {
+    width: auto;
+    height: 870px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    
+}
+
+/* news page */
+
+section.post.page{
+    background-image: url("img/announcment.jpg");
+    height: 500px;
+    width: 80%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+section.post.page {
+    width: 70%;
+    margin:4rem;
+    justify-content: space-between;
+}
+.title-news{
+    font-size: 30px;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+div.column-container.clearfix{
+    width: 100%;
+    height: auto;
+
+}
+section.space{
+    height: 1200px;
+    width: 100%;
+}
+
+#pages-5{
+    height: 100%;
+}
+
+.info-news-title {
+    font-size: 25px;
+    text-align: right;
+
+}
+
+
+.footer-wrapper {
+    width: 100%;
+    background-color: #520707;
+    display: flex;
+
+}
+
+.footer-nav:hover{
+    color: #999;
+}
+
+.footer-nav{
+    width:35%;
+    display: flex;
+    align-content: center;
+    justify-content:flex-start;
+    
+ 
+}
+
+
+.services-banner{
+    width: 38%;
+    height: 100%;
+    border-left: 1px solid #3a0606;
+    
+    
+    
+}
+
+.socials-banner{
+    width: 25%;
+    padding: 30px 0px 0px 0px;   
+}
+
+
+.socials-banner{
+    display:block;
+    padding:0px;
+    margin: 0px;
+    font-size: 3px;
+
+}
+
+
+.connectws{
+    color:#999;
+    font-size: 18px;
+}
+
+i {
+    color: white;
+    font-size: 30px;
+    width: 70px;
+}
+
+/* special page layout */
+.content-special{
+  height: 600px;
+}
+
+.space-between {
+    height: 300px;
+}
+.space-between1 {
+    height: 50px;
+}
+
+.special-footer-image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.title-pages{
+    font-size: 70px;
+    margin-top: 100px;
+    margin-left: 90px;
+    border: solid;
+    color: white; 
+    margin: 0px 700px 60px 0px;
+    text-align: center;
+    margin-left: 100px;
+    
+    
+}
+
+.line{
+    position: fixed;
+    z-index: -99;
+    left: 50%;
+    border-right: #520707 solid 3px;
+    bottom: 0; 
+    top: 0;
+    margin: 0;
+    
+}
+
+.line-wrapper
+{
+    height: 80%;
+    
+}
+
+
+.contactus-wrapper{
+    background-color:white;
+    width: 100%;
+    height: 25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.phone{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display:inline-block;
+    border-right: 1px solid #999999;
+}
+
+.location{
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    display:inline-block;
+    border-right: 1px solid #999999;
+
+}
+
+.email{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display:inline-block;
+
+
+}
+
+i2{
+    color: #520707;
+    font-size: 50px;
+}
+
+h3{
+    color:#520707;
+    padding: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-us-text{
+    text-align: center;
+}
+
+.contact-us-title {
+    color: #999;
+    font-size: 12px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 6px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=send] {
+    background-color: #520707;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=send]:hover {
+    background-color: black;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contactcontainer {
+    border-radius: 5px;
+    background-color: white ;
+    min-width: 300px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+/* icons */
+.icons {
+    padding: 100px 0 0 60px;
+}
+
+
+/* home stuff */
+
+.pictures-banner{
+    width:100%;
+    display: flex;
+}
+
+.content-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text-holder{
+    width: auto;
+    height:5vh;
+    width: 25vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.carpentry{
+    background-image: url("img/carpentry.jpg") ; 
+    width:25%;
+    height: 50vh;
+    background-size: cover;    
+}
+.roofing{
+    background-image: url("img/roofing.jpg") ; 
+    width:25%;
+    height: 50vh;
+    background-size: cover;
+}
+
+.tinsmithing {
+    background-image: url("img/tinsmithwork.jpg" );
+    width:25%;
+    height: 50vh;
+    background-size: cover;
+}
+
+.roofins{
+    background-image: url("img/roofinsulationn.jpg") ; 
+    width:25%;
+    height: 50vh;
+    background-size: cover;
+}
+
+
+.mounted-facade{
+    background-image: url("img/mmountedfacade.jpg") ; 
+    width:25%;
+    height: 50vh;
+    background-size: cover;
+}
+.dry-construction{
+    background-image: url("img/dryconstruction.jpg") ; 
+    width:25%;
+    height: 50vh;
+    background-size: cover;
+}
+
+.hall-construction {
+    background-image: url("img/hallconstruction.jpg" );
+    width:25%;
+    height: 50vh;
+    background-size: cover;
+}
+
+.machines-for-rent{
+    background-image: url("img/machinesforrent.jpg") ; 
+    width:25%;
+    height: 50vh;
+    background-size: cover;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+/* animation */
+.animation-logo-wrapper {
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+
+.animation-logo{
+    width: 350px;
+    height: 350px;
+}
+
+.video{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 250px 0 0 0 !important ;
+}
+
+.video-container {
+top: 0px;
+bottom: 0px;
+  }
+
+  
+
+/* single post */
+.single-image{
+    background-image: url("img/announcment.jpg");
+    width:70%;
+    height: 70vh;
+    background-size: cover;
+    margin-left: 200px;
+}
+.content-single{
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+}
+#news{
+
+    color:white;
+    border: 3px solid white;
+    font-size: 60px;
+    
+    margin-left: 150px;
+}
+
+
+
+/* responsive-ness ???? */
+@media screen and (max-width:990px){
+    .text-holder{
+    font-size: 17px;
+                        }
+}
+
+/* The footer */
+
+@media screen and (max-width:600px){
+    .footer-wrapper{
+        width: 100%;
+        
+    }
+    .footer-nav,.services-banner,.socials-banner, i,.site-footer nav ul li, .site-footer{
+        display: block;
+        padding: 0px;
+        height: 40%;
+        margin: 0px auto;
+        width: 50%;
+        float: right;   
+    }
+
+    .connectws {
+        display: block;
+        padding: 0px;
+        height: 40%;
+        margin: 0px auto;
+        width: 50%;
+
+    }
+
+    .site-nav ul {
+        display: none;
+    }
+
+    .text-holder{
+        font-size: 10px;
+    }
+
+
+    .contactus-wrapper{
+        width: 100%;
+    }
+
+    .phone,.location,.email
+    {
+        display: block;
+        padding: 0px;
+        height: 40%;
+        margin: 0px auto;
+        width: 50%;
+        float: right;  
+    }
+
+    .special-footer-image{
+        width: 100%;
+        background-size:contain;
+        margin-top: 0px;
+        height: 45%;
+    }
+    .title-pages{
+        font-size: 45px;
+    }
+
+
+    /* About us page*/
+
+    .about-info {
+        padding-left: 0px;
+        padding-top: 0px;
+        color: white;
+        text-align: left;
+        width: 100vw;
+
+
+        
+    }
+    
+    .cscolumn_aboutus
+    {
+        background-color: black;
+        opacity: 60%;
+        padding:10px ;
+        width: 100%;
+        font-size: 13px;
+        
+
+
+
+    }
+    
+    .title-about {
+        font-size: 175%;
+        border: solid;
+        color: white;
+        margin: 0px 350px 30px 0px;
+        text-align: center;
+        width: 100%;
+    } 
+
+    .responsive{
+
+        background-size: 100% 75%;
+
+
+    
+    }
+     .contactcontainer{
+        min-width: 300px;
+        padding: 0px;
+    }
+    
+    /* animation */
+.animation-logo-wrapper {
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+.animation-logo{
+    width: 220px;
+    height: 220px;
+}
+
+div.text-column {
+	width: 100%;
+    float: right;
+    background-color:whitesmoke;
+    opacity: 80%;
+    font-size: 13px;
+    min-height: 30px;
+}
+
+div.text-column  p{
+    margin:5vh;
+
+}
+div.text-column  h3{
+    margin:5vh;
+    max-height: 0px;
+}
+
+.info-news-title {
+    font-size: 15px;
+    text-align: left;
+    float: left;
+    padding: 0px;
+    line-height: 2;
+    padding: 0px 150px 0 0 ;
+
+}
+
+
+
+
+}
+
+
+
+
